@@ -44,6 +44,8 @@ public class StudentController {
         return "Student Record Deleted Successfully ...";
     }
 
+    // Update by id
+
     @PutMapping("/updateById/{id}")
     public ResponseEntity<StudentResponse> updateById(@RequestBody StudentRequest studentRequest,@PathVariable Integer id){
 
